@@ -45,7 +45,7 @@
 .section-light.footer{background:#f0ebe1}
 .section-light.grain::after{display:none}
 
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:hidden}
 body{
   background:var(--background);
   color:var(--foreground);
@@ -589,8 +589,8 @@ img{display:block;max-width:100%}
   .hero-center .hero-tagline{order:0}
   .hero-center h1{order:1}
   .hero-center .hero-desc{order:2}
-  .hero-actions{order:3;margin-top:32px}
-  .hero-product{order:4;max-width:100%;width:100%;margin:32px auto 0}
+  .hero-product{order:3;max-width:100%;width:100%;margin:32px auto 0;z-index:1}
+  .hero-actions{order:4;margin-top:32px;z-index:2;position:relative}
 }
 </style>
 </head>
